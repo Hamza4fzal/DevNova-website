@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Hero3D } from './Hero3D';
+import { HeroVideo } from './HeroVideo';
 import { Typewriter } from './Typewriter';
 import { ServicesSelector } from './ServicesSelector';
 import { motion } from 'motion/react';
 
 export const Hero: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(() => 
+    typeof window !== 'undefined' ? window.matchMedia('(max-width: 768px)').matches : false
+  );
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    };
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-8 overflow-hidden selection:bg-secondary/20">
-      <Hero3D />
+      {isMobile ? <Hero3D /> : <HeroVideo />}
       
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <motion.div
