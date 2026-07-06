@@ -1,16 +1,12 @@
 import React from 'react';
-import { Container } from '../components/ui/Container';
-import { SectionTitle } from '../components/ui/SectionTitle';
+import { ComingSoon } from '../components/ui/ComingSoon';
 
 export const About: React.FC = () => {
   return (
-    <div className="pt-32 pb-24">
-      <Container>
-        <SectionTitle subtitle="Page">About</SectionTitle>
-        <div className="mt-12 text-secondary/70">
-          This is the About page placeholder.
-        </div>
-      </Container>
-    </div>
+    <ComingSoon 
+      title="About Us"
+      seoDescription="Learn more about DevNova, a premium global software agency specializing in enterprise-grade software solutions."
+      seoCanonical="https://devnova.systems/about"
+    />
   );
 };

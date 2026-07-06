@@ -1,16 +1,12 @@
 import React from 'react';
-import { Container } from '../components/ui/Container';
-import { SectionTitle } from '../components/ui/SectionTitle';
+import { ComingSoon } from '../components/ui/ComingSoon';
 
 export const Dashboards: React.FC = () => {
   return (
-    <div className="pt-32 pb-24">
-      <Container>
-        <SectionTitle subtitle="Page">Dashboards</SectionTitle>
-        <div className="mt-12 text-secondary/70">
-          This is the Dashboards page placeholder.
-        </div>
-      </Container>
-    </div>
+    <ComingSoon 
+      title="Analytics Dashboards"
+      seoDescription="Custom analytics and data dashboards developed by DevNova."
+      seoCanonical="https://devnova.systems/services/dashboards"
+    />
   );
 };

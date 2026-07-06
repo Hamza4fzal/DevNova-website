@@ -42,9 +42,10 @@ export const SEO: React.FC<SEOProps> = ({
 
       {/* JSON-LD Schema for LLMs (ChatGPT, Gemini) and Search Engines */}
       {jsonLd && (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
+        />
       )}
     </Helmet>
   );
