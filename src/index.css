@@ -12,9 +12,13 @@
   --color-supporting-5: #F1F3F1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
-    @apply bg-secondary text-primary antialiased overflow-x-hidden;
+    @apply bg-primary text-secondary antialiased overflow-x-hidden;
   }
 }
 
