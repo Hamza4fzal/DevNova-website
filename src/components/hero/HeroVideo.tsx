@@ -23,7 +23,6 @@ export const HeroVideo: React.FC = () => {
         style={{ opacity: scrubReady ? 0 : 0.6 }}
         autoPlay
         muted
-        loop
         playsInline
       />
 
