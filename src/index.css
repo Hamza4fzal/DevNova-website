@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "sans-serif";
+  --color-primary: #111111;
+  --color-secondary: #FFFFFF;
+  --color-accent: #1C2E1E;
+  --color-supporting-1: #738273;
+  --color-supporting-2: #5A635A;
+  --color-supporting-3: #FAFBF9;
+  --color-supporting-4: #EAECE9;
+  --color-supporting-5: #F1F3F1;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary text-primary antialiased overflow-x-hidden;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}

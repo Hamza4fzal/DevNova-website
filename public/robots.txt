@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Specific crawler instructions for LLMs
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://devnova.systems/sitemap.xml
