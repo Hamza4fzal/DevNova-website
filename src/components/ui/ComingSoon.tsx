@@ -52,21 +52,7 @@ export const ComingSoon: React.FC<ComingSoonProps> = ({
         {/* Center content */}
         <div className="relative z-10 w-full max-w-2xl mx-auto text-center">
           
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex justify-center mb-8 sm:mb-10"
-          >
-            <div className="inline-flex items-center gap-2 rounded-full border border-secondary/15 bg-secondary/5 backdrop-blur-sm px-4 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-secondary/70">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              Under Construction
-            </div>
-          </motion.div>
+
           
           {/* Title */}
           <motion.h1
