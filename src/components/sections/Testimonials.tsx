@@ -4,7 +4,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-24">
+    <section className="py-12 sm:py-16 md:py-24">
       <Container>
         <SectionTitle subtitle="Testimonials">Testimonials</SectionTitle>
         <div className="mt-12">

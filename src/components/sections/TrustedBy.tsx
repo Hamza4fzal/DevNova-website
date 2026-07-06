@@ -4,7 +4,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 
 export const TrustedBy: React.FC = () => {
   return (
-    <section className="py-24">
+    <section className="py-12 sm:py-16 md:py-24">
       <Container>
         <SectionTitle subtitle="TrustedBy">TrustedBy</SectionTitle>
         <div className="mt-12">
